@@ -1,145 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Farheen Naaz | Game Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<title>Farheen Naaz | Game Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      padding: 70px 20px;
-    }
-    h1 {
-      font-size: 2.7rem;
-      margin-bottom: 10px;
-    }
-    h2 {
-      margin-bottom: 20px;
-      color: #38bdf8;
-    }
-    p {
-      max-width: 800px;
-      margin: auto;
-      color: #cbd5f5;
-    }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 50px 20px;
-    }
-    .card {
-      background: #020617;
-      padding: 22px;
-      border-radius: 12px;
-      margin-bottom: 25px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 18px;
-      background: #38bdf8;
-      color: #020617;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-right: 10px;
-    }
-    .skills span {
-      display: inline-block;
-      background: #1e293b;
-      padding: 8px 14px;
-      margin: 6px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #94a3b8;
-    }
-  </style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero {
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #cbd5f5;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(56,189,248,0.4);
+}
+
+.secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card {
+  background: rgba(2,6,23,0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.skills span {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  background: #020617;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Farheen Naaz 👋</h1>
-  <p>
-    BTech Computer Science Engineering student and <strong>Game Developer</strong>  
-    passionate about building engaging and logic-driven games using Unity and C#.
-  </p>
+  <div class="hero">
+    <h1>Hi, I'm <span>Farheen Naaz</span></h1>
+    <p>
+      BTech CSE student & passionate <strong>Game Developer</strong><br>
+      I build engaging games using Unity & C#
+    </p>
 
-  <a class="btn" href="https://github.com/Farheennaaz02" target="_blank">GitHub</a>
-  <a class="btn" href="https://farheen-naaz.itch.io/" target="_blank">Itch.io</a>
-  <a class="btn" href="https://linkedin.com/in/farheen-naaz-426212321" target="_blank">LinkedIn</a>
-</header>
-
-<section>
-  <h2>🎓 Education</h2>
-  <div class="card">
-    <p><strong>B.Tech in Computer Science Engineering</strong><br>
-    Maharishi Markandeshwar University, Mullana<br>
-    Graduation: July 2028</p>
-
-    <p><strong>Senior Secondary</strong> – Sophia Girls' Senior Secondary School, Saharanpur (2024)</p>
-    <p><strong>High School</strong> – Sophia Girls' Senior Secondary School, Saharanpur (2022)</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://github.com/Farheennaaz02" target="_blank">GitHub</a>
+      <a class="btn secondary" href="https://farheen-naaz.itch.io/" target="_blank">Itch.io</a>
+      <a class="btn secondary" href="https://linkedin.com/in/farheen-naaz-426212321" target="_blank">LinkedIn</a>
+    </div>
   </div>
-</section>
+</header>
 
 <section>
   <h2>🎮 Game Projects</h2>
 
   <div class="card">
-    <h3>SpinQuest (Unity Puzzle Game)</h3>
-    <p>
-      Designed all puzzle levels independently with tricky, mind-engaging mechanics.
-      Implemented rotation mechanics and puzzle logic using C#.
-    </p>
-    <a class="btn" href="https://farheen-naaz.itch.io" target="_blank">Play Game</a>
+    <h3>SpinQuest – Puzzle Game</h3>
+    <p>Logic-driven Unity puzzle game with rotation mechanics and handcrafted levels.</p>
+    <a class="btn primary" href="https://farheen-naaz.itch.io" target="_blank">Play Game</a>
   </div>
 
   <div class="card">
-    <h3>Platypop (2D Platformer)</h3>
-    <p>
-      Built multiple platforming levels with balanced difficulty.
-      Implemented a trophy-based progression system to unlock stages.
-    </p>
-    <a class="btn" href="https://www.linkedin.com" target="_blank">View on LinkedIn</a>
+    <h3>Platypop – 2D Platformer</h3>
+    <p>Multi-level platformer with trophy-based progression and balanced difficulty.</p>
   </div>
 
   <div class="card">
-    <h3>RushTrack (2D Endless Runner)</h3>
-    <p>
-      Developed an endless runner with dynamic obstacle spawning and progressive difficulty.
-      Focused on smooth player controls and engaging gameplay.
-    </p>
-    <a class="btn" href="https://www.linkedin.com" target="_blank">View on LinkedIn</a>
+    <h3>RushTrack – Endless Runner</h3>
+    <p>Fast-paced endless runner with dynamic obstacles and smooth player control.</p>
   </div>
 
   <div class="card">
-    <h3>BotPath (First Unity Game)</h3>
-    <p>
-      Created a simple endless runner to understand Unity fundamentals.
-      Implemented basic player movement, jumping, and obstacle mechanics.
-    </p>
-    <a class="btn" href="https://farheen-naaz.itch.io" target="_blank">Play Game</a>
-  </div>
-
-  <div class="card">
-    <h3>Pew Pew Heroes (FPS Game)</h3>
-    <p>
-      Developed an FPS game with enemy AI that patrols and chases the player.
-      Implemented gun mechanics including reloading animations.
-    </p>
-    <a class="btn" href="https://farheen-naaz.itch.io" target="_blank">Play Game</a>
+    <h3>Pew Pew Heroes – FPS</h3>
+    <p>FPS game featuring enemy AI, shooting mechanics, and reload animations.</p>
   </div>
 </section>
 
@@ -152,9 +182,7 @@
     <span>Game Physics</span>
     <span>Level Design</span>
     <span>Collision Detection</span>
-    <span>Procedural Generation</span>
     <span>Cinemachine</span>
-    <span>Rigidbody & Colliders</span>
   </div>
 </section>
 
@@ -163,21 +191,14 @@
   <div class="card">
     <p>🥇 First Prize – Code Relay (2024)</p>
     <p>🥉 Third Prize – Fine Arts (2023)</p>
-    <p>🏆 Winner – Online Arts & Craft Contest (2022)</p>
-  </div>
-</section>
-
-<section>
-  <h2>📩 Contact</h2>
-  <div class="card">
-    <p>Email: <strong>farheenreshma577@gmail.com</strong></p>
-    <p>Phone: <strong>+91-8279678569</strong></p>
+    <p>🏆 Winner – Arts & Craft Contest (2022)</p>
   </div>
 </section>
 
 <footer>
-  © 2025 Farheen Naaz | Game Developer Portfolio
+  © 2025 Farheen Naaz • Game Developer
 </footer>
 
 </body>
 </html>
+
