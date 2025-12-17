@@ -20,6 +20,8 @@ body {
   color: #e5e7eb;
 }
 
+/* ===== Header ===== */
+
 header {
   min-height: 100vh;
   display: flex;
@@ -82,6 +84,8 @@ header {
   color: #020617;
 }
 
+/* ===== Sections ===== */
+
 section {
   max-width: 1100px;
   margin: auto;
@@ -113,6 +117,8 @@ section h2 {
   color: #38bdf8;
 }
 
+/* ===== Skills ===== */
+
 .skills span {
   display: inline-block;
   margin: 8px;
@@ -122,7 +128,7 @@ section h2 {
   font-size: 0.9rem;
 }
 
-/* ===== Certificates Section ===== */
+/* ===== Certificates (FLIP CARDS) ===== */
 
 .certificates {
   text-align: center;
@@ -132,10 +138,10 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
 }
 
-.certificate-card {
+.cert-card {
   width: 260px;
   height: 180px;
   perspective: 1000px;
@@ -143,14 +149,14 @@ section h2 {
   position: relative;
 }
 
-.certificate-card .card-front,
-.certificate-card .card-back {
+.cert-front,
+.cert-back {
   width: 100%;
   height: 100%;
   position: absolute;
-  backface-visibility: hidden;
   border-radius: 18px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  backface-visibility: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,41 +164,43 @@ section h2 {
   transition: transform 0.6s ease;
 }
 
-.card-front {
-  background: rgba(2,6,23,0.9);
+.cert-front {
+  background: rgba(2,6,23,0.95);
   color: #e5e7eb;
   flex-direction: column;
 }
 
-.card-front h3 {
+.cert-front h3 {
   color: #38bdf8;
   margin-bottom: 8px;
 }
 
-.card-front p {
+.cert-front p {
   font-size: 14px;
   opacity: 0.85;
 }
 
-.card-back {
-  background: #ffffff;
+.cert-back {
+  background: #fff;
   transform: rotateY(180deg);
 }
 
-.card-back img {
+.cert-back img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 18px;
 }
 
-.certificate-card.flip .card-front {
+.cert-card.flip .cert-front {
   transform: rotateY(180deg);
 }
 
-.certificate-card.flip .card-back {
+.cert-card.flip .cert-back {
   transform: rotateY(360deg);
 }
+
+/* ===== Footer ===== */
 
 footer {
   text-align: center;
@@ -200,6 +208,8 @@ footer {
   color: #94a3b8;
 }
 </style>
+
+
 </head>
 
 <body>
@@ -255,68 +265,69 @@ footer {
 
   <div class="certificate-container">
 
-    <div class="certificate-card" onclick="this.classList.toggle('flip')">
-      <div class="card-front">
+    <div class="cert-card" onclick="this.classList.toggle('flip')">
+      <div class="cert-front">
         <h3>C# Intermediate</h3>
-        <p>Object Oriented Programming</p>
+        <p>Object Oriented Programming & Logic Building</p>
       </div>
-      <div class="card-back">
-        <img src="certificates/csharp-intermediate.png" alt="C# Intermediate">
+      <div class="cert-back">
+        <img src="certificates/csharp-intermediate.png">
       </div>
     </div>
 
-    <div class="certificate-card" onclick="this.classList.toggle('flip')">
-      <div class="card-front">
+    <div class="cert-card" onclick="this.classList.toggle('flip')">
+      <div class="cert-front">
         <h3>Machine Learning</h3>
-        <p>ML Fundamentals</p>
+        <p>Basics of ML Algorithms</p>
       </div>
-      <div class="card-back">
-        <img src="certificates/ml.jpg" alt="ML Certificate">
-      </div>
-    </div>
-
-    <div class="certificate-card" onclick="this.classList.toggle('flip')">
-      <div class="card-front">
-        <h3>Unity Game Dev</h3>
-        <p>2D Game Development</p>
-      </div>
-      <div class="card-back">
-        <img src="certificates/unity-game.jpg" alt="Unity Certificate">
+      <div class="cert-back">
+        <img src="certificates/ml.jpg">
       </div>
     </div>
 
-    <div class="certificate-card" onclick="this.classList.toggle('flip')">
-      <div class="card-front">
+    <div class="cert-card" onclick="this.classList.toggle('flip')">
+      <div class="cert-front">
+        <h3>Unity Game Development</h3>
+        <p>2D Game Development with Unity</p>
+      </div>
+      <div class="cert-back">
+        <img src="certificates/unity-game.jpg">
+      </div>
+    </div>
+
+    <div class="cert-card" onclick="this.classList.toggle('flip')">
+      <div class="cert-front">
         <h3>Intro to C#</h3>
-        <p>Programming Basics</p>
+        <p>Basics of C# Programming</p>
       </div>
-      <div class="card-back">
-        <img src="certificates/intro-to-csharp.png" alt="Intro to C#">
+      <div class="cert-back">
+        <img src="certificates/intro-to-csharp.png">
       </div>
     </div>
 
-    <div class="certificate-card" onclick="this.classList.toggle('flip')">
-      <div class="card-front">
+    <div class="cert-card" onclick="this.classList.toggle('flip')">
+      <div class="cert-front">
         <h3>Git & GitHub</h3>
-        <p>Version Control</p>
+        <p>Version Control & Collaboration</p>
       </div>
-      <div class="card-back">
-        <img src="certificates/git-github.png" alt="Git Certificate">
+      <div class="cert-back">
+        <img src="certificates/git-github.png">
       </div>
     </div>
 
-    <div class="certificate-card" onclick="this.classList.toggle('flip')">
-      <div class="card-front">
+    <div class="cert-card" onclick="this.classList.toggle('flip')">
+      <div class="cert-front">
         <h3>SIH Participation</h3>
         <p>Smart India Hackathon</p>
       </div>
-      <div class="card-back">
-        <img src="certificates/sih.png" alt="SIH Certificate">
+      <div class="cert-back">
+        <img src="certificates/sih.png">
       </div>
     </div>
 
   </div>
 </section>
+
 
 <section>
   <h2>🛠 Skills</h2>
